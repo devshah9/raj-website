@@ -433,6 +433,20 @@ p {
       padding-top: 80px;
       padding-bottom: 80px; } }
 
+.services-video {
+  padding-top: 120px;
+  
+  position: relative; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .services-video {
+      padding-top: 100px;
+       } }
+  @media (max-width: 767px) {
+    .services-video {
+      padding-top: 80px;
+       } }
+
+
 .services-content .services-icon i {
   font-size: 64px;
   color: #0067f4; }

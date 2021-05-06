@@ -1,0 +1,159 @@
+.container1 {
+  height: 500px;
+  position: relative;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container1 {
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .container1 {
+    height: 300px;
+  }
+}
+.container1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+}
+.container1 {
+  position: relative;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container1 .header-title {
+  font-size: 44px;
+  line-height: 55px;
+  color: #121212;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .container1 .header-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.container1 .text {
+  font-size: 20px;
+  line-height: 32px;
+  display: inline-block;
+  text-align: left;
+  color: #6c6c6c;
+  margin-top: 16px;
+}
+@media (max-width: 767px) {
+  .container1 .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.container1 .header-btn {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container1 .header-btn li {
+  display: inline-block;
+  margin: 10px 10px 0;
+}
+.container1 .header-btn li a.main-btn {
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: 0;
+  line-height: 50px;
+}
+.container1 .header-btn li a.main-btn i {
+  margin-left: 5px;
+}
+.container1 .header-btn li a.main-btn.btn-one {
+  color: #fff;
+}
+.container1 .header-btn li a.main-btn.btn-one::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(left, #0067f4, #2bdbdc);
+  background-image: -o-linear-gradient(left, #0067f4, #2bdbdc);
+  background-image: linear-gradient(to right, #0067f4, #2bdbdc);
+  background-position: right center;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.container1 .header-btn li a.main-btn.btn-one:hover::before {
+  background-image: -webkit-linear-gradient(right, #0067f4, #2bdbdc);
+  background-image: -o-linear-gradient(right, #0067f4, #2bdbdc);
+  background-image: linear-gradient(to left, #0067f4, #2bdbdc);
+  background-position: left center;
+  -webkit-transition: all none ease-out 0s;
+  -moz-transition: all none ease-out 0s;
+  -ms-transition: all none ease-out 0s;
+  -o-transition: all none ease-out 0s;
+  transition: all none ease-out 0s;
+}
+.container1 .header-btn li a.main-btn.btn-two:hover {
+  -webkit-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
+}
+.container1 .header-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.container1 .header-shape img {
+  width: 100%;
+}
+.main-btn {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 2px solid transparent;
+  padding: 0 32px;
+  font-size: 16px;
+  line-height: 48px;
+  color: #0067f4;
+  cursor: pointer;
+  z-index: 5;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  position: relative;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .main-btn {
+    font-size: 14px;
+    padding: 0 20px;
+    line-height: 40px;
+  }
+}
